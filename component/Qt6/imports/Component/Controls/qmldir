@@ -1,0 +1,2 @@
+singleton QRouter QRouter.qml
+singleton QEventBus QEventBus.qml

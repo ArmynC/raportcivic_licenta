@@ -1,0 +1,15 @@
+{
+    "template": [
+      "{{introduction}}",
+      "\n\n{{gender_text}} {{last_name}} {{first_name}} cu domiciliul in {{county}}, {{city}}, {{street_name}}, {{building}} {{entrance}} {{apartment}}, solicit sa-mi comunicati daca imobilului din {{event_address}}, are emisa autorizarea de construire, precum si numarul/data ei. Concomitent, va cer o copie a autorizatiei de construire respective, impreuna cu anxele ei in conformitate cu Legea nr. 50/1991, art. 7, alin. 21, care prevede ca autorizatia de construire si anexele acesteia au caracter public si se pun la dispozitia publicului spre informare. Totodata, va cer sa incorporati si Planului Urbanistic de Detaliu, in conformitate cu Ordinul nr. 2701/2010, cap. III, art. 47, care prevede faptul ca informatiile cuprinse in PUD reprezinta informatii de interes public si vor fi furnizate si puse la dispozitie in urma solicitarilor.",
+      "\n\nAstfel, in baza normelor Legii nr. 544/2001 privind liberul acces la informatiile de interes public, doresc sa se aiba in vedere art. 55, alin. 3, care stipuleaza imperativitatea expunerii listelor la zi ale actelor de autoritate prevazute la alin. 1, ce vor contine obligatoriu urmatoarele informatii/documente extrase din documentatia tehnica autorizata: numarul autorizatiei de construire/desfiintare si data emiterii acesteia, indicatorii urbanistici (procent de ocupare a terenului si coeficient de utilizare a terenului), regimul de inaltime si retragerile constructiei de la limitele de proprietate, planul de situatie, toate fatadele.",
+      "{{descriere_aditionala}}",
+      "{{location}}",
+      "{{attachment}}",
+      "\n\nIn cazul in care nu a fost intreprinsa inca nicio actiune, doresc transmiterea tuturor masurilor care vor fi luate ulterior sau in caz contrar, prezentarea argumentelor pentru care considerati ca situatia descrisa nu prezinta o problema.",
+      "\n\nDe asemenea, daca speta se afla sub raspunderea a mai multor institutii sau alte departamente afliliate dvs., va rog sa inaintati acest e-mail catre cele abilitate in acest sens, punand adresa mea in CC sau sa-mi comunicati carei autoritati as putea sa ma adresez.",
+      "{{l544_2001}}",
+      "{{ending}}"
+    ]
+  }
+  

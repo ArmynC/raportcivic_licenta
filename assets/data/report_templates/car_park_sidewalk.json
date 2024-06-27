@@ -1,0 +1,18 @@
+{
+    "template": [
+      "{{introduction}}",
+      "\n\n{{gender_text}} {{last_name}} {{first_name}} cu domiciliul in {{county}}, {{city}}, {{street_name}}, {{building}} {{entrance}} {{apartment}}, doresc a va aduce la cunostinta faptul ca in {{event_address}} o multitudine de automobile sunt parcate in mod neregulamentar si in forma continua.",
+      "\n\nAvand in vedere ca aceasta zona apartine domeniului dar si luand in seama greaua facilitare a accesului persoanelor cu disabilitati fizice, in baza Legii nr. 335/2022, este necesara identificarea si sanctionarea celor care au parcat in forma neregulamentara si continua.",
+      "{{descriere_aditionala}}",
+      "\n\n--",
+      "\n\nEste de mentionat totodata ca parcarea masinilor pe trotuare este permisa numai acolo unde exista spatii special semnalizate in acest sens. Masura este inclusa in H.G. nr. 965/2016, ce a modificat Regulamentul pentru aplicarea Codului rutier. Mai precis, documentul prevede ca <administratorul drumului public poate amenaja pe anumite zone ale trotuarului, cu avizul politiei rutiere, spatii destinate opririi sau stationarii vehiculelor, marcate si semnalizate corespunzator>. Spatiile speciale pentru parcarea masinilor pe trotuar pot fi facute doar daca este respectat culoarul pentru pietoni de un metru latime si daca accesul vehiculelor se face din drum. In acelasi timp, esential este si ca pozitionarea autoturismelor in parcare sa nu incurce circulatia pe prima banda a drumului sau pe pistele amenajate. Prevederile stabilesc si ca <nu se pot amenaja parcari pentru autovehicule, pe trotuar, la mai putin de 10 metri de intersectii, statii ale mijloacelor de transport in comun sau treceri pentru pietoni>, conform H.G. nr. 965/2016.",
+      "{{location}}",
+      "{{attachment}}",
+      "\n\nDrept urmare, va solicit sa luati in termenul legal toate masurile necesare.",
+      "\n\nIn cazul in care nu a fost intreprinsa inca nicio actiune, doresc transmiterea tuturor masurilor care vor fi luate ulterior sau in caz contrar, prezentarea argumentelor pentru care considerati ca situatia descrisa nu prezinta o problema.",
+      "\n\nDe asemenea, daca speta se afla sub raspunderea a mai multor institutii sau alte departamente afliliate dvs., va rog sa inaintati acest e-mail catre cele abilitate in acest sens, punand adresa mea in CC sau sa-mi comunicati carei autoritati as putea sa ma adresez.",
+      "{{og27}}",
+      "{{ending}}"
+    ]
+  }
+  

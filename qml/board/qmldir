@@ -1,0 +1,3 @@
+﻿singleton ItemsMain 1.0 ItemsMain.qml
+singleton ItemsBase 1.0 ItemsBase.qml
+singleton SharedState 1.0 SharedState.qml

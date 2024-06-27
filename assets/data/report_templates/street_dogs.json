@@ -1,0 +1,16 @@
+{
+    "template": [
+      "{{introduction}}",
+      "\n\n{{gender_text}} {{last_name}} {{first_name}} cu domiciliul in {{county}}, {{city}}, {{street_name}}, {{building}} {{entrance}} {{apartment}}, doresc a va aduce la cunostinta faptul ca in {{event_address}}, exista potentiali caini fara stapan, conform prevederilor OUG 155/2001 remodificata, art 1^1.",
+      "\n\nAstfel, avand in vedere Legea 227/2002, cu modificari si completari aduse OUG 155/2001 privind cadrul normativ general de gestionare al animalelor si anume Anexa nr. 1, lit. E in ceea ce priveste vehiculele si Anexa nr. 2, in legatura cu normele de capturare si transport al cainilor, Legea 9/2008 cu modificari si compeltari aduse Legii 205/2004 privind protectia animalelor, Legea administratiei publice 215/2001, care stipuleaza organizarea si competentele locale, Legea 61/1991, art. 2, alin. 17 ce prevede sanctionarea nesupravegherii sau lasarii in libertate a animalelor care pot fi un pericol cat si HCGMB nr. 648/2018, ce reglementeaza activitatea locala de sterilizare si capturare a animalelor, va solicit sa luati in termenul legal toate masurile necesare pentru ridicarea cainilor comunitari din zona respectiva si daca este cazul, identificarea urmata de sanctionarea responsabililor, in acest caz, a proprietarilor.",
+      "{{descriere_aditionala}}",
+      "{{location}}",
+      "{{attachment}}",
+      "\n\nDrept urmare, va solicit sa luati in termenul legal toate masurile necesare.",
+      "\n\nIn cazul in care nu a fost intreprinsa inca nicio actiune, doresc transmiterea tuturor masurilor care vor fi luate ulterior sau in caz contrar, prezentarea argumentelor pentru care considerati ca situatia descrisa nu prezinta o problema.",
+      "\n\nDe asemenea, daca speta se afla sub raspunderea a mai multor institutii sau alte departamente afliliate dvs., va rog sa inaintati acest e-mail catre cele abilitate in acest sens, punand adresa mea in CC sau sa-mi comunicati carei autoritati as putea sa ma adresez.",
+      "{{og27}}",
+      "{{ending}}"
+    ]
+  }
+  

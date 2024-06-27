@@ -1,0 +1,16 @@
+{
+    "template": [
+      "{{introduction}}",
+      "\n\n{{gender_text}} {{last_name}} {{first_name}} cu domiciliul in {{county}}, {{city}}, {{street_name}}, {{building}} {{entrance}} {{apartment}}, doresc a va aduce la cunostinta faptul ca in {{event_address}}, pe spatiul pietonal, zona prezinta o degradare accelerata a spatiului verde - alveolele. Se observa ca acestea din urma au fost, in mare parte, golite (copaci taiati), acoperite ilegal cu beton, dregadate de masini care opreau neregulamentar pe trotuar.",
+      "\n\nAstfel, aceasta zona intra in administrarea dvs., drept urmare, va solicit sa luati in considerare toate aspectele semanalate anterior si in urma unui proces de documentare, sa resistematizati si reamenajati in cel mai scurt timp, cu o solutie placuta estetic, in mod corect, eficient si uniform toata suprafata verde a trotuarului, degradata de-a lungul timpului.",
+      "{{descriere_aditionala}}",
+      "{{location}}",
+      "{{attachment}}",
+      "\n\nDrept urmare, va solicit sa luati in termenul legal toate masurile necesare.",
+      "\n\nIn cazul in care nu a fost intreprinsa inca nicio actiune, doresc transmiterea tuturor masurilor care vor fi luate ulterior sau in caz contrar, prezentarea argumentelor pentru care considerati ca situatia descrisa nu prezinta o problema.",
+      "\n\nDe asemenea, daca speta se afla sub raspunderea a mai multor institutii sau alte departamente afliliate dvs., va rog sa inaintati acest e-mail catre cele abilitate in acest sens, punand adresa mea in CC sau sa-mi comunicati carei autoritati as putea sa ma adresez.",
+      "{{og27}}",
+      "{{ending}}"
+    ]
+  }
+  
