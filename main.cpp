@@ -67,7 +67,7 @@ int main(int argc, char *argv[])
         qDebug() << "Failed to initialize libsodium!";
         return -1;
     } else {
-        qDebug() << "Succesfully initialized libsodium!";
+        qDebug() << "Successfully initialized libsodium!";
     }
 
     // https://doc.qt.io/qt-6/qsqldatabase.html
@@ -78,11 +78,16 @@ int main(int argc, char *argv[])
     db.setUserName("admin");
     db.setPassword("");
     // db.setConnectOptions("requiressl=1;sslmode=require;sslrootcert=ca.pem");
+
+    bool dbConnected = false;
+    QString dbErrorMessage;
     if (!db.open()) {
-        qDebug() << "Failed to connect to the database: " << db.lastError().text();
-        return -1;
+        dbErrorMessage = "Failed to connect to the database: " + db.lastError().text();
+        qWarning() << dbErrorMessage;
+        qWarning() << "The application will continue without database connectivity.";
     } else {
-        qDebug() << "Connected succesfully to the database!";
+        qDebug() << "Connected successfully to the database!";
+        dbConnected = true;
     }
 
     // https://doc.qt.io/qt-6/qqmlengine.html#qmlRegisterType
@@ -99,7 +104,7 @@ int main(int argc, char *argv[])
     qmlRegisterType<ExifExtractor>(uri, 1, 0, "ExifExtractor");
     qmlRegisterType<ReportJsonManager>(uri, 1, 0, "ReportJsonManager");
 
-    // context properties classes with singletone nature
+    // context properties classes with singleton nature
     QQmlApplicationEngine engine;
     TranslateHelper::getInstance().init(&engine);
     engine.rootContext()->setContextProperty("applicationEngine", &engine);
@@ -113,6 +118,9 @@ int main(int argc, char *argv[])
     engine.rootContext()->setContextProperty("ReportBridge", &ReportBridge::getInstance());
     engine.rootContext()->setContextProperty("UrlOpener", &UrlOpener::getInstance());
 
+    // indicate database connection status
+    engine.rootContext()->setContextProperty("dbConnected", dbConnected);
+    engine.rootContext()->setContextProperty("dbErrorMessage", dbErrorMessage);
 
     const QUrl url(QStringLiteral("qrc:/qt/qml/src/qml/App.qml"));
     QObject::connect(&engine, &QQmlApplicationEngine::objectCreated,

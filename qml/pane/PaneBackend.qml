@@ -29,6 +29,39 @@ QWindow {
         z: 7
     }
 
+    // db connection status (showcase?)
+    Rectangle {
+        id: errorNotification
+        width: parent.width
+        height: 50
+        color: "#FFD2D2"
+        visible: !dbConnected
+        z: 1000
+
+        Text {
+            anchors.left: parent.left
+            anchors.right: closeButton.left
+            anchors.verticalCenter: parent.verticalCenter
+            anchors.leftMargin: 10
+            anchors.rightMargin: 10
+            text: qsTr("Aplicatia va rula in modul showcase!") + " " + dbErrorMessage
+            color: "#D8000C"
+            font.pixelSize: 14
+            wrapMode: Text.WordWrap
+            elide: Text.ElideRight
+            maximumLineCount: 2
+        }
+
+        Button {
+            id: closeButton
+            anchors.right: parent.right
+            anchors.verticalCenter: parent.verticalCenter
+            anchors.rightMargin: 10
+            text: qsTr("Inchide")
+            onClicked: errorNotification.visible = false
+        }
+    }
+
     QEvent {
         name: "checkUpdate"
         onTriggered: {
@@ -64,7 +97,7 @@ QWindow {
             }
         }
         onActivated: reason => {
-            if(reason === SystemTrayIcon.Trigger) {
+            if (reason === SystemTrayIcon.Trigger) {
                 window.show()
                 window.raise()
                 window.requestActivate()
@@ -112,7 +145,7 @@ QWindow {
             items: ItemsMain
             footerItems: ItemsBase
             topPadding: {
-                if(window.useSystemAppBar) {
+                if (window.useSystemAppBar) {
                     return 0
                 }
                 return QTools.isMacos() ? 20 : 0
@@ -123,7 +156,7 @@ QWindow {
             onLogoClicked: {
                 clickCount += 1
                 showSuccess("%1:%2".arg(qsTr("Click")).arg(clickCount))
-                if(clickCount === 5) {
+                if (clickCount === 5) {
                     clickCount = 0
                 }
             }
@@ -172,10 +205,11 @@ QWindow {
     }
 
     function handleDarkChanged(button) {
-        if(!QTheme.animationEnabled || window.fitsAppBarWindows === false) {
+        if (!QTheme.animationEnabled || window.fitsAppBarWindows === false) {
             changeDark()
-        } else { // animatia este activata?
-            if(loader_reveal.sourceComponent) {
+        } else {
+            // animatia este activata?
+            if (loader_reveal.sourceComponent) {
                 return
             }
             loader_reveal.sourceComponent = com_reveal
@@ -190,12 +224,13 @@ QWindow {
     }
 
     function changeDark() {
-        if(QTheme.dark) {
+        if (QTheme.dark) {
             QTheme.darkMode = QThemeType.Light
         } else {
             QTheme.darkMode = QThemeType.Dark
         }
     }
+
 
     /*
     QTour {
@@ -221,7 +256,6 @@ QWindow {
         }
     }
     */
-
     QContentDialog {
         property string newVerson
         property string body
@@ -250,18 +284,18 @@ QWindow {
             var data = JSON.parse(result)
             console.debug("Current version " + AppVersion.version)
             console.debug("New version " + data.tag_name)
-            if(data.tag_name !== AppVersion.version) {
+            if (data.tag_name !== AppVersion.version) {
                 dialog_update.newVerson = data.tag_name
                 dialog_update.body = data.body
                 dialog_update.open()
             } else {
-                if(!silent) {
+                if (!silent) {
                     showInfo(qsTr("Ultima versiune este deja instalata!"))
                 }
             }
         }
         onError: (status, errorString) => {
-            if(!silent) {
+            if (!silent) {
                 showError(qsTr("Eroare intampinata. Conexiune anormala!"))
             }
             console.debug(status + ";" + errorString)
